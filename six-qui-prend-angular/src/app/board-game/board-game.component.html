@@ -1,0 +1,6 @@
+<ng-container *ngFor="let cardsLine of tableCards">
+    <ng-container *ngFor="let card of cardsLine">
+        <card [card]="card"></card>
+    </ng-container>
+    <br/>
+</ng-container>
