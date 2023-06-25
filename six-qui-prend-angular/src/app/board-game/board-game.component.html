@@ -1,6 +1,22 @@
+Pioche !!
+<br/>
+<card [card]="{value: 0, points: 0}"></card>
+<br/>
+Tableau de jeu
+<br/>
 <ng-container *ngFor="let cardsLine of tableCards">
     <ng-container *ngFor="let card of cardsLine">
         <card [card]="card"></card>
     </ng-container>
     <br/>
 </ng-container>
+
+
+<!-- <ng-container *ngFor="let player of players">
+    {{player.name}}
+    <br/>
+    <ng-container *ngFor="let card of player.hand">
+        <card [card]="card"></card>
+    </ng-container>
+    <br/>
+</ng-container> -->
